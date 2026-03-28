@@ -19,12 +19,12 @@ rosservice call /enable_motors true
 
 The Controller Schema:
 
-L1: Lock button
+# L1: Lock button
 
-L3: 
+# L3: 
 # ↑ ↓ on Z axis
 # ↺ ↻ on YAW 
 
-R3:
+# R3:
 # ↑ ↓ on X axis
 # ← → on Y axis
