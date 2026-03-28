@@ -1,0 +1,12 @@
+# Logitech F710 (X Input Mode) Config
+# Eksenler (Axes)
+axis_linear: 1         # Sol Analog Yukarı/Aşağı -> İleri/Geri Hız
+scale_linear: 1.0      # Normal hız limiti (m/s)
+scale_linear_turbo: 3.0 # Turbo basılıyken hız limiti
+
+axis_angular: 3        # Sağ Analog Sağ/Sol -> Dönüş (Yaw)
+scale_angular: 1.0     # Dönüş hızı limiti (rad/s)
+
+# Tuşlar (Buttons)
+enable_button: 4       # LB (Sol Omuz Tuşu) -> Buna BASILI TUTMADAN robot hareket etmez!
+enable_turbo_button: 5 # RB (Sağ Omuz Tuşu) -> Buna basarsan turbo hız devreye girer.

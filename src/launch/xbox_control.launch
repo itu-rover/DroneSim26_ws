@@ -1,0 +1,17 @@
+<launch>
+  <!-- 1. Joystick Sürücüsünü Başlat -->
+  <node pkg="joy" type="joy_node" name="joy_node">
+    <param name="dev" value="/dev/input/js0" />
+    <param name="deadzone" value="0.1" /> <!-- Titremeyi engeller -->
+    <param name="autorepeat_rate" value="20" /> <!-- Saniyede 20 kere komut gönder (Düşmeyi engeller) -->
+  </node>
+
+  <!-- 2. Komut Çeviriciyi Başlat -->
+  <node pkg="teleop_twist_joy" type="teleop_node" name="teleop_twist_joy">
+    <!-- Komutun gideceği adres (Eğer drone çalışmazsa burayı /quadrotor/cmd_vel yaparız) -->
+    <remap from="cmd_vel" to="/cmd_vel" />
+
+    <!-- Parametreleri YAML Dosyasından Yükle -->
+    <rosparam command="load" file="/home/bakyolal/DroneSim_ws/src/xbox_drone.yaml" />
+  </node>
+</launch>

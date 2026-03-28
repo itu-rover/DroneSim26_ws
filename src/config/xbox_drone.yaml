@@ -1,0 +1,29 @@
+# XBOX ONE - PROFESYONEL MODE 2 (FULL TURBO)
+axis_linear:
+  x: 4        # Pitch
+  y: 3        # Roll
+  z: 1        # Throttle
+
+axis_angular:
+  yaw: 0      # Yaw
+
+# NORMAL MOD (LB Basılıyken)
+scale_linear:
+  x: 2.0
+  y: 2.0
+  z: 2.0      
+scale_angular:
+  yaw: 1.5    # Normal dönüş hızı
+
+# TURBO MOD (RB Basılıyken)
+scale_linear_turbo:
+  x: 6.0      # 3 kat daha hızlı ileri/geri
+  y: 6.0      # 3 kat daha hızlı yanlara
+  z: 4.0      # Daha seri yükseliş
+  
+# EĞER NODE DESTEKLİYORSA BURASI DEVREYE GİRER
+scale_angular_turbo:
+  yaw: 3.0    # 2 kat daha hızlı dönüş (Manevra kabiliyeti artar)
+
+enable_button: 4        # LB (Normal Uçuş)
+enable_turbo_button: 5  # RB (Turbo Uçuş)
